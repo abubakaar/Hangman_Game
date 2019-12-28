@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_blurr"
+    android:orientation="vertical"
+    tools:context="com.example.qaiser.hangmanproject.PlayGame">
+
+    <TextView
+        android:id="@+id/V23"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Score :"
+        android:textSize="30dp" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="228dp"
+        android:gravity= "center"
+        android:layout_marginLeft="90dp"
+        android:paddingTop="15dp">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/gallows"
+            android:paddingLeft="0dp"
+            android:paddingTop="0dp"
+            android:src="@drawable/gallows" />
+
+        <ImageView
+            android:id="@+id/head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/head"
+            android:paddingLeft="100dp"
+            android:paddingTop="20dp"
+            android:src="@drawable/android_hangman_head" />
+
+        <ImageView
+            android:id="@+id/body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/body"
+            android:paddingLeft="112dp"
+            android:paddingTop="57dp"
+            android:src="@drawable/android_hangman_body" />
+
+
+        <ImageView
+            android:id="@+id/arm1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/arm"
+            android:paddingLeft="84dp"
+            android:paddingTop="55dp"
+            android:src="@drawable/android_hangman_arm1" />
+
+        <ImageView
+            android:id="@+id/arm2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/arm"
+            android:paddingLeft="118dp"
+            android:paddingTop="53dp"
+            android:src="@drawable/android_hangman_arm2" />
+
+        <ImageView
+            android:id="@+id/leg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/leg"
+            android:paddingLeft="95dp"
+            android:paddingTop="97dp"
+            android:src="@drawable/android_hangman_leg1" />
+
+        <ImageView
+            android:id="@+id/leg2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/leg"
+            android:paddingLeft="117dp"
+            android:paddingTop="97dp"
+            android:src="@drawable/android_hangman_leg2" />
+
+        <ImageView
+            android:id="@+id/hint"
+            android:layout_width="33dp"
+            android:layout_height="22dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/arm2"
+            android:layout_marginEnd="33dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/hint" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/word"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp"></LinearLayout>
+
+    <GridView
+        android:id="@+id/letters"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+
+        android:horizontalSpacing="5dp"
+        android:numColumns="10"
+        android:padding="5dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp">
+
+    </GridView>
+
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="88dp"-->
+        <!--android:layout_marginTop="50dp">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/V3"-->
+            <!--android:layout_width="201dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="score"-->
+            <!--android:textSize="30dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/V4"-->
+            <!--android:layout_width="209dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="high score"-->
+            <!--android:textSize="30dp" />-->
+    <!--</LinearLayout>-->
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background_blurr"
+    tools:context="com.example.qaiser.hangmanproject.AddWords">
+
+    <LinearLayout
+        android:layout_width="269dp"
+        android:layout_height="192dp"
+        android:background="@drawable/layout_boundary"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/usernameWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/etAddWords"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="@string/add_word"
+                android:inputType="textEmailAddress"
+                android:textSize="18dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <TextView
+            android:layout_width="186dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/choose_level"
+            android:textColor="#000"
+            android:textSize="18dp" />
+
+        <Spinner
+            android:id="@+id/spLevel"
+            android:layout_width="196dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:entries="@array/level_arrays"
+            android:prompt="@string/level_prompt" />
+    </LinearLayout>
+</LinearLayout>

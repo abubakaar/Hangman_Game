@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">زبان تبدیل کریں</string>
+    <string name="play_game">کھیل کھیلیں</string>
+    <string name="add_new_word">نیا الفاظ شامل کریں</string>
+    <string name="option">اختیار</string>
+    <string name="language">زبان</string>
+    <string name="show_level">سطح دکھائیں</string>
+    <string name="add_word">الفاظ شامل کریں</string>
+    <string name="choose_level">سطح کا انتخاب کریں</string>
+    <string name="dictionary">لغت</string>
+    <string name="cancel">منسوخ کریں</string>
+    <string name="ok">ٹھیک ہے</string>
+    <string name="start">شروع کریں</string>
+    <string name="select_the_language">زبان منتخب کریں</string>
+
+
+    // spinner Items
+    <string name="level">سطح 1</string>
+    <string name="leve2">سطح 2</string>
+    <string name="leve3">سطح 3</string>
+    <string name="leve4">سطح 4</string>
+
+    <string-array name="level_arrays">
+        <item>@string/level</item>
+        <item>@string/leve2</item>
+        <item>@string/leve3</item>
+        <item>@string/leve4</item>
+
+    </string-array>
+
+
+
+</resources>
